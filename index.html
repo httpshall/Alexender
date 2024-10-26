@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexender - Руzzкий Блогер</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background: linear-gradient(to bottom, #2196F3, #FFEB3B); /* Синий сверху, желтый снизу */
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: rgba(33, 150, 243, 0.9); /* Полупрозрачный синий */
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: #fff; /* Белый цвет текста навигации */
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #FFEB3B; /* Желтый при наведении */
+        }
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            animation: fadeIn 2s ease-in-out;
+            color: #fff; /* Белый текст заголовка */
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый */
+            border-radius: 10px;
+            max-width: 800px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            color: #2196F3; /* Синий цвет заголовка секции */
+            text-align: center;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #333; /* Черный текст для параграфов */
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 235, 59, 0.9); /* Полупрозрачный желтый */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            font-size: 1.2em;
+            color: #333; /* Черный текст в подвале */
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* Адаптивность для мобильных устройств */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            h2 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 data-aos="fade-down">Alexender - Руzzкий Блогер</h1>
+        <nav>
+            <a href="#about">Достижения</a>
+            <a href="#videos">Тайна</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+    </header>
+
+    <section id="about" data-aos="fade-up">
+        <h2>Кто такой Alexender?</h2>
+        <p>Alexender — самый известный блогер российской федерации, смог прославиться блогадоря песни "Happy Birthday to You" которая стала хитом в странах африки. Большу часть жизни провел в городе Харьков в котором и начал снимать свои первые фильмы. Большая популярность пришла не сразу, только на четвертый день съемок. Зрителей зацепило то как автор смешно озвучивает жителей в майнкарфте и старается плохо снять видео.
+        <p>Сейчас же личный канал блогера насчитывает около 90 подписчиков, а общий доход составляет 5 000 000 рублей за 25 лет.</p>
+        <img src="https://i.ytimg.com/vi/6_7OEtSRSSo/maxresdefault.jpg" alt="Александр Гущин"> <!-- Замените на актуальную ссылку на фото -->
+    </section>
+
+    <section id="videos" data-aos="fade-up">
+        <h2>Загадочный друг</h2>
+        <p>Не раз в видео появлялся загадочный персонаж под именем - VlastikPro, многие его запомнили как SvastikPro.
+        <p>Мы почти ничего не знали про этого персонажа до ЭТОГО момента. На фото мы видим как SvastikPro за спиной у друга Alexender кидает запасы алмазиков в лаву. И тут все такие шоооооооо. Да-да этот с виду безобидный чудик оказался тупым ГРИФЕРОМ и мать его кидает драгоценные алмазики в лаву как так можно ваще я не пойму реально сейчас если у вас есть предположения и догадки можете написать это на листочке и повесить на холодильник.
+        <p>Ну а я же с вами прощаюсь ребятки иии всем пока!</p>
+        <img src="https://i.ytimg.com/vi/-jHeQMTTQD4/maxresdefault.jpg" alt="Видео Александра"> <!-- Замените на актуальную ссылку на фото -->
+    </section>
+
+    <footer id="contact" data-aos="fade-up">
+<p>Автор текста: Дмитрий Уткин</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // продолжительность анимации
+            once: true, // анимация будет показана только один раз
+        });
+    </script>
+
+</body>
+</html>
